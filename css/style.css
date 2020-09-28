@@ -1,0 +1,39 @@
+/*Define tabs  between selectors*/
+/*Correct*/
+#selector1,
+#selector2,
+#selector3{
+    background-color: cadetblue;
+}
+
+/*Incorrect*/
+#selector1, #selector2, #selector3{
+    background-color: cadetblue;
+}
+input[type="button"] {
+    line-height: 1.1;
+}
+/*Naming selectors*/
+/*Correct*/
+#form-content{
+    border-width: 100px;
+}
+/*Incorrect*/
+#formContent { /* Avoid camelcase. */
+    margin: 0;
+}
+ 
+#form_content{ /* Avoid underscores. */
+    margin: 0;
+}
+ 
+div#form_content { /* Avoid over-qualification. */
+    margin: 0;
+}
+ 
+#ab-xr { /* What is a c1-xr?! Use a better name. */
+    margin: 0;
+}
+input[type=button] { /* Should be [type="text"] */
+    line-height: 110% /* Also doubly incorrect */
+}
